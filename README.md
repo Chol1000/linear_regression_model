@@ -11,7 +11,8 @@ Empowering international students and graduates with data-driven career insights
 ## Live API Endpoint
 **API URL:** `https://international-graduates-salary-api.onrender.com`  
 **Swagger Documentation:** `https://international-graduates-salary-api.onrender.com/docs`  
-**Health Check:** `https://international-graduates-salary-api.onrender.com/health`
+**Health Check:** `https://international-graduates-salary-api.onrender.com/health`  
+**Status:** ✅ **LIVE & DEPLOYED**
 
 ## Model Performance Results
 - **Best Model:** Linear Regression (Lowest MSE)

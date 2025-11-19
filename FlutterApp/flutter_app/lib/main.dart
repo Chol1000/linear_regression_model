@@ -86,15 +86,8 @@ class _PredictionScreenState extends State<PredictionScreen> {
     });
 
     try {
-      // Auto-detect the correct API URL based on platform
-      String apiUrl;
-      if (Platform.isAndroid) {
-        apiUrl = 'http://10.0.2.2:8000/predict'; // Android emulator
-      } else if (Platform.isIOS) {
-        apiUrl = 'http://localhost:8000/predict'; // iOS simulator
-      } else {
-        apiUrl = 'http://localhost:8000/predict'; // Default
-      }
+      // Use the live Render API URL
+      const String apiUrl = 'https://international-graduates-salary-api.onrender.com/predict';
       
       final response = await http.post(
         Uri.parse(apiUrl),
