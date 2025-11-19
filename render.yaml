@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: international-graduates-salary-api
+    env: python
+    buildCommand: pip install -r API/requirements.txt
+    startCommand: cd API && python prediction.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
