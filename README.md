@@ -9,10 +9,10 @@ Empowering international students and graduates with data-driven career insights
 **Variety:** This comprehensive dataset combines graduate-outcomes survey data with visa, language, and academic information from authoritative sources including UK HESA Graduate Outcomes Survey and Eurostat EU Labour Force Survey. The dataset enables predictive analysis of employment status and salary estimation through key features: Education Level, Field of Study, Language Proficiency, Visa Type, University Ranking, Region of Study, Age, and Years Since Graduation. It supports feature analysis to quantify the relative importance of visa categories, language proficiency scores, and academic credentials while uncovering non-linear interactions between factors.
 
 ## Live API Endpoint
-**API URL:** `https://international-graduates-salary-api.onrender.com`  
-**Swagger Documentation:** `https://international-graduates-salary-api.onrender.com/docs`  
-**Health Check:** `https://international-graduates-salary-api.onrender.com/health`  
-**Status:** ✅ **LIVE & DEPLOYED**
+**API URL:** [https://international-graduates-salary-api.onrender.com](https://international-graduates-salary-api.onrender.com)  
+**Swagger Documentation:** [https://international-graduates-salary-api.onrender.com/docs](https://international-graduates-salary-api.onrender.com/docs)  
+**Health Check:** [https://international-graduates-salary-api.onrender.com/health](https://international-graduates-salary-api.onrender.com/health)  
+**Status:** LIVE & DEPLOYED
 
 ## Model Performance Results
 - **Best Model:** Linear Regression (Lowest MSE)
@@ -164,7 +164,7 @@ Provides detailed model comparison and training statistics.
 
 | Model | Test MSE | Test R² | Selection Criteria |
 |-------|----------|---------|-------------------|
-| **Linear Regression** | **36,009,030** | **0.8877** | ✅ **Lowest Loss** |
+| **Linear Regression** | **36,009,030** | **0.8877** | **Lowest Loss** |
 | Random Forest | 36,058,265 | 0.8875 | |
 | SGD Regressor | 36,202,098 | 0.8871 | |
 | Decision Tree | 36,682,082 | 0.8856 | |
@@ -199,7 +199,7 @@ The rich dataset with 300,000+ records significantly enhanced model performance:
 
 ## Key Features Implemented
 
-### ✅ **Task 1: Linear Regression**
+### **Task 1: Linear Regression**
 - Non-generic use case: International graduate salary prediction
 - Rich dataset: 300K+ records with 8 meaningful features
 - Comprehensive visualizations: Correlation heatmap, distribution plots
@@ -208,26 +208,79 @@ The rich dataset with 300,000+ records significantly enhanced model performance:
 - Best model saved: Linear Regression (lowest MSE)
 - Prediction script: `predict_salary.py` with example usage
 
-### ✅ **Task 2: API Development**
+### **Task 2: API Development**
 - FastAPI endpoint: POST `/predict` with full documentation
 - Public URL: Render deployment ready
 - CORS middleware: Enabled for cross-origin requests
 - Pydantic constraints: Data types and range validation
 - Swagger UI: Automatic API documentation at `/docs`
 
-### ✅ **Task 3: Flutter Mobile App**
+### **Task 3: Flutter Mobile App**
 - 8 input fields matching model requirements
 - "Predict" button with loading states
 - Result display with error handling
 - Professional UI with proper organization
 - Cross-platform compatibility (Android/iOS)
 
-### ✅ **Task 4: Video Demo Requirements**
+### **Task 4: Video Demo Requirements**
 - Mobile app prediction demonstration
 - Swagger UI testing with validation
 - Model performance explanation
 - Dataset impact analysis
 - Clear, concise presentation format
+
+## API Deployment Guide
+
+### Step 1: Prerequisites
+- GitHub repository with your code
+- FastAPI application structure
+- All dependencies in `requirements.txt`
+
+### Step 2: Create Render Configuration
+Create `render.yaml` in repository root:
+```yaml
+services:
+  - type: web
+    name: international-graduates-salary-api
+    env: python
+    buildCommand: pip install -r API/requirements.txt
+    startCommand: cd API && python prediction.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
+```
+
+### Step 3: Deploy on Render
+1. Go to [Render](https://render.com) and sign in with GitHub
+2. Click **New → Blueprint**
+3. Select your repository
+4. Confirm Blueprint Name and branch `main`
+5. Click **Deploy Blueprint**
+
+### Step 4: Verify Deployment
+- **Health Check:** Visit `/health` endpoint
+- **API Documentation:** Visit `/docs` for Swagger UI
+- **Test Predictions:** Use `/predict` endpoint
+
+## API Requirements Verification
+
+### All Requirements Met:
+1. **API endpoint for prediction** - POST `/predict` with full validation
+2. **Public URL + Swagger UI** - Live documentation at `/docs`
+3. **CORS middleware** - Enabled for cross-origin requests
+4. **Pydantic constraints** - Data types and range validation on all variables
+5. **Variable datatypes** - Each variable has specific type constraints
+
+### Variable Constraints
+- `education_level`: Literal["Diploma", "Bachelor's", "Master's", "PhD"]
+- `field_of_study`: Literal["Engineering", "IT", "Business", "Health", "Arts", "Social Sciences"]
+- `language_proficiency`: Literal["Basic", "Intermediate", "Fluent", "Advanced"]
+- `visa_type`: Literal["Student", "Post-study", "Work", "Permanent Residency"]
+- `university_ranking`: Literal["Low", "Medium", "High"]
+- `region_of_study`: Literal["UK", "Canada", "Australia", "EU"]
+- `age`: int (18-65)
+- `years_since_graduation`: int (0-40)
 
 ## Running the Application
 
