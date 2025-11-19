@@ -4,14 +4,14 @@
 Empowering international students and graduates with data-driven career insights by leveraging machine learning to predict salary outcomes. This system bridges the information gap in global education decisions, enabling students to maximize their return on educational investment and make informed choices about their academic and professional futures.
 
 ## Dataset Description
-**Source:** [International Graduates Employment Dataset - Kaggle](https://www.kaggle.com/datasets/internationaleducation/international-graduates-employment)  
+**Source:** [International Graduates Employment Dataset - Kaggle](https://www.kaggle.com/datasets/quackquackrp/international-graduates-employment-dataset)  
 **Volume:** 300,000+ anonymized records of international graduates across multiple countries  
-**Variety:** Rich dataset combining graduate-outcomes survey data with visa, language, and academic information from UK HESA Graduate Outcomes Survey and Eurostat EU Labour Force Survey. Features include Education Level, Field of Study, Language Proficiency, Visa Type, University Ranking, Region of Study, Age, and Years Since Graduation.
+**Variety:** This comprehensive dataset combines graduate-outcomes survey data with visa, language, and academic information from authoritative sources including UK HESA Graduate Outcomes Survey and Eurostat EU Labour Force Survey. The dataset enables predictive analysis of employment status and salary estimation through key features: Education Level, Field of Study, Language Proficiency, Visa Type, University Ranking, Region of Study, Age, and Years Since Graduation. It supports feature analysis to quantify the relative importance of visa categories, language proficiency scores, and academic credentials while uncovering non-linear interactions between factors.
 
 ## Live API Endpoint
-**API URL:** `https://your-api-url.onrender.com` *(To be updated upon deployment)*  
-**Swagger Documentation:** `https://your-api-url.onrender.com/docs`  
-**Health Check:** `https://your-api-url.onrender.com/health`
+**API URL:** `https://international-graduates-salary-api.onrender.com`  
+**Swagger Documentation:** `https://international-graduates-salary-api.onrender.com/docs`  
+**Health Check:** `https://international-graduates-salary-api.onrender.com/health`
 
 ## Model Performance Results
 - **Best Model:** Linear Regression (Lowest MSE)
@@ -178,23 +178,6 @@ Provides detailed model comparison and training statistics.
 - Dataset impact analysis and model selection justification
 - Code walkthrough of key components
 
-## Deployment Instructions
-
-### API Deployment (Render)
-1. Connect GitHub repository to Render
-2. Configure build settings with `requirements.txt`
-3. Set build command: `pip install -r requirements.txt`
-4. Set start command: `python prediction.py`
-5. Deploy and obtain public URL
-6. Update README with live API endpoint
-
-### Mobile App Testing
-1. Ensure API is running (locally or deployed)
-2. Update API URL in Flutter app if using deployed version
-3. Build and run: `flutter run`
-4. Test all 8 input fields and validation constraints
-5. Verify API connectivity and prediction accuracy
-
 ## Model Selection Justification
 Linear Regression was selected as the best performing model based on:
 - **Lowest Test MSE:** 36,009,030 (meets "Least Loss" requirement)
@@ -256,12 +239,6 @@ The rich dataset with 300,000+ records significantly enhanced model performance:
 1. **Deploy API:** Push to Render with `requirements.txt`
 2. **Update Flutter:** Modify API URL for production endpoint
 3. **Test Integration:** Verify end-to-end functionality
-
-## License
-This project is licensed under the Apache 2.0 License.
-
-## Academic Integrity
-This project was developed as part of a machine learning summative assignment focusing on regression analysis, API development, and mobile app deployment. All work is original and properly attributed.
 
 ---
 *Empowering international graduates through data-driven career insights.*
