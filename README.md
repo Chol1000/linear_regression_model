@@ -70,8 +70,8 @@ summative/
 ### API Setup
 ```bash
 # Clone repository
-git clone <your-github-repo-url>
-cd summative/API
+git clone https://github.com/Chol1000/linear_regression_model.git
+cd linear_regression_model/summative/API
 
 # Install dependencies
 pip install -r requirements.txt
