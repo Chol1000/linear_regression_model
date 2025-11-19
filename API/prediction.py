@@ -25,7 +25,7 @@ class PredictionInput(BaseModel):
     education_level: Literal["Diploma", "Bachelor's", "Master's", "PhD"] = Field(..., description="Education level")
     field_of_study: Literal["Engineering", "IT", "Business", "Health", "Arts", "Social Sciences"] = Field(..., description="Field of study")
     language_proficiency: Literal["Basic", "Intermediate", "Fluent", "Advanced"] = Field(..., description="Language proficiency level")
-    visa_type: Literal["Student", "Post-study", "Work", "Permanent Residency"] = Field(..., description="Visa type")
+    visa_type: Literal["Student", "Post-study", "Work Visa", "Permanent Residency"] = Field(..., description="Visa type")
     university_ranking: Literal["Low", "Medium", "High"] = Field(..., description="University ranking")
     region_of_study: Literal["UK", "Canada", "Australia", "EU"] = Field(..., description="Region of study (UK, Canada, Australia, EU)")
     age: int = Field(..., ge=18, le=65, description="Age between 18 and 65")

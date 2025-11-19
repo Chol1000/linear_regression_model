@@ -69,7 +69,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
   final List<String> _visaTypes = [
     'Student',
     'Post-study',
-    'Work',
+    'Work Visa',
     'Permanent Residency'
   ];
   final List<String> _universityRankings = ['Low', 'Medium', 'High'];

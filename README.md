@@ -111,7 +111,7 @@ Predicts annual salary for international graduates.
   "education_level": "Master's",
   "field_of_study": "Engineering", 
   "language_proficiency": "Fluent",
-  "visa_type": "Post-study",
+  "visa_type": "Work Visa",
   "university_ranking": "High",
   "region_of_study": "UK",
   "age": 28,
@@ -276,7 +276,7 @@ services:
 - `education_level`: Literal["Diploma", "Bachelor's", "Master's", "PhD"]
 - `field_of_study`: Literal["Engineering", "IT", "Business", "Health", "Arts", "Social Sciences"]
 - `language_proficiency`: Literal["Basic", "Intermediate", "Fluent", "Advanced"]
-- `visa_type`: Literal["Student", "Post-study", "Work", "Permanent Residency"]
+- `visa_type`: Literal["Student", "Post-study", "Work Visa", "Permanent Residency"]
 - `university_ranking`: Literal["Low", "Medium", "High"]
 - `region_of_study`: Literal["UK", "Canada", "Australia", "EU"]
 - `age`: int (18-65)
