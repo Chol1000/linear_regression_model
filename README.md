@@ -39,7 +39,7 @@ This visualization shows the direct impact of model selection on training outcom
 **API URL:** https://international-graduates-salary-api.onrender.com  
 **Swagger Documentation:** https://international-graduates-salary-api.onrender.com/docs  
 **Health Check:** https://international-graduates-salary-api.onrender.com/health  
-**Status:** LIVE & DEPLOYED ✅
+**Status:** LIVE & DEPLOYED
 
 ### API Testing with Swagger UI
 Access the interactive API documentation at: https://international-graduates-salary-api.onrender.com/docs
@@ -247,7 +247,7 @@ linear_regression_model/
 
 | Model | Test MSE | Test R² | RMSE | Selection Criteria |
 |-------|----------|---------|------|-------------------|
-| **Linear Regression** | **36,009,030** | **0.8877** | **$6,001** | **Lowest Loss ✅** |
+| **Linear Regression** | **36,009,030** | **0.8877** | **$6,001** | **Lowest Loss** |
 | Random Forest | 36,058,265 | 0.8875 | $6,005 | Higher complexity |
 | SGD Regressor | 36,202,098 | 0.8871 | $6,017 | Less stable |
 | Decision Tree | 36,682,082 | 0.8856 | $6,057 | Overfitting risk |
@@ -281,26 +281,26 @@ Linear Regression was selected as the production model based on:
 
 ## Key Features Implementation Summary
 
-### ✅ Task 1: Linear Regression Model
+### Task 1: Linear Regression Model
 - **Non-generic Use Case:** International graduate salary prediction for career guidance
 - **Rich Dataset:** 300K+ records with 8 meaningful features across multiple countries
 - **Comprehensive Analysis:** Correlation heatmap, feature importance, model comparison
 - **Best Model Selection:** Linear Regression with lowest MSE (36,009,030)
 - **Model Persistence:** Saved models with preprocessing pipeline
 
-### ✅ Task 2: Production API
+### Task 2: Production API
 - **Live Endpoint:** https://international-graduates-salary-api.onrender.com/predict
 - **Swagger Documentation:** Interactive testing at `/docs` endpoint
 - **Data Validation:** Pydantic constraints with proper error handling
 - **CORS Support:** Cross-origin requests enabled for mobile integration
 
-### ✅ Task 3: Mobile Application
+### Task 3: Mobile Application
 - **Cross-platform:** Flutter app for Android and iOS
 - **8 Input Fields:** All model features with proper validation
 - **Real-time Predictions:** API integration with loading states
 - **Professional UI:** Material Design 3 with responsive layout
 
-### ✅ Task 4: Documentation & Demo
+### Task 4: Documentation & Demo
 - **Comprehensive README:** All requirements covered with detailed instructions
 - **Video Demo:** 5-minute demonstration covering all components
 - **Clear Instructions:** Step-by-step setup and troubleshooting guide
