@@ -1,7 +1,7 @@
 # International Graduates Salary Prediction System
 
 ## Mission Statement
-Empowering international students with data-driven career insights through machine learning salary predictions. This system bridges critical information gaps in global education decisions, addressing employment uncertainty for international graduates. My solution enables students to maximize their educational investment returns through predictive analytics. We provide actionable insights for informed career planning and strategic educational choices.
+Empowering international students with data-driven career insights through machine learning salary predictions. This system bridges critical information gaps in global education decisions, addressing employment uncertainty for international graduates. My solution enables students to maximize their educational investment returns through predictive analytics, providing actionable insights for informed career planning and strategic educational choices.
 
 ## Dataset Description
 **Source:** [International Graduates Employment Dataset - Kaggle](https://www.kaggle.com/datasets/quackquackrp/international-graduates-employment-dataset)  
