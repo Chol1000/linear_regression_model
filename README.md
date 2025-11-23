@@ -192,33 +192,46 @@ flutter run -d [device-id]
 ### Directory Structure
 ```
 linear_regression_model/
-├── summative/
-│   ├── linear_regression/
-│   │   ├── multivariate.ipynb     # Complete ML pipeline, analysis, and visualizations
-│   │   ├── predict_salary.py      # Standalone prediction script
-│   │   ├── models/                # Saved models and preprocessors
-│   │   │   ├── best_linear_model.pkl      # Trained Linear Regression model
-│   │   │   ├── scaler.pkl                 # Feature scaler for normalization
-│   │   │   ├── feature_names.pkl          # Feature names for consistency
-│   │   │   └── categorical_columns.pkl    # Categorical encoding reference
-│   │   └── dataset.csv           # Training dataset (300K+ records)
-│   ├── API/
-│   │   ├── prediction.py           # FastAPI application with ML model integration
-│   │   ├── requirements.txt        # Python dependencies for deployment
-│   │   └── render.yaml            # Render.com deployment configuration
-│   ├── FlutterApp/flutter_app/     # Complete cross-platform mobile application
-│   │   ├── lib/main.dart          # Main application code with UI and API integration
-│   │   ├── pubspec.yaml           # Flutter dependencies and configuration
-│   │   ├── android/               # Android-specific configurations
-│   │   ├── ios/                   # iOS-specific configurations
-│   │   └── test/                  # Widget and unit tests
-│   └── images/                   # Screenshots and visualizations
-│       ├── correlation_heatmap.png       # Feature correlation analysis
+├── summative/                    # 🎯 MAIN PROJECT DIRECTORY
+│   ├── linear_regression/        # 🤖 MACHINE LEARNING COMPONENT
+│   │   ├── multivariate.ipynb    # Complete ML pipeline, analysis, and visualizations
+│   │   ├── predict_salary.py     # Standalone prediction script
+│   │   ├── dataset.csv          # Training dataset (300K+ records)
+│   │   └── models/              # Saved models and preprocessors
+│   │       ├── best_linear_model.pkl      # Trained Linear Regression model
+│   │       ├── scaler.pkl                 # Feature scaler for normalization
+│   │       ├── feature_names.pkl          # Feature names for consistency
+│   │       ├── categorical_columns.pkl    # Categorical encoding reference
+│   │       └── selected_features.pkl      # Selected feature list
+│   ├── API/                     # 🚀 PRODUCTION API SERVICE
+│   │   ├── prediction.py        # FastAPI application with ML model integration
+│   │   ├── requirements.txt     # Python dependencies for deployment
+│   │   └── render.yaml         # Render.com deployment configuration
+│   ├── FlutterApp/             # 📱 MOBILE APPLICATION
+│   │   └── flutter_app/        # Complete cross-platform mobile app
+│   │       ├── lib/
+│   │       │   └── main.dart   # Main application code with UI and API integration
+│   │       ├── android/        # Android-specific configurations
+│   │       ├── ios/           # iOS-specific configurations
+│   │       ├── web/           # Web platform support
+│   │       ├── windows/       # Windows platform support
+│   │       ├── linux/         # Linux platform support
+│   │       ├── macos/         # macOS platform support
+│   │       ├── test/          # Widget and unit tests
+│   │       ├── pubspec.yaml   # Flutter dependencies and configuration
+│   │       └── [other Flutter files]
+│   └── images/                 # 📊 VISUALIZATIONS & SCREENSHOTS
+│       ├── correlation_heatmap.png           # Feature correlation analysis
 │       ├── model_performance_comparison.png  # Model comparison results
-│       ├── inputs.png                    # Mobile app input interface
-│       ├── results.png                   # Mobile app prediction results
-│       └── [other visualizations]
-└── README.md                 # This comprehensive documentation
+│       ├── inputs.png                       # Mobile app input interface
+│       ├── results.png                      # Mobile app prediction results
+│       ├── Feature_importance_analysis.png  # Feature importance visualization
+│       ├── learning_curve.png               # Model learning curves
+│       ├── linear_regression_final_model.png # Final model visualization
+│       └── [other ML visualizations]
+├── render.yaml                 # 🔧 Root deployment configuration
+├── .gitignore                 # Git ignore rules
+└── README.md                  # 📖 This comprehensive documentation
 ```
 
 ## Technical Implementation Details
