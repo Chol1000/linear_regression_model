@@ -117,7 +117,7 @@ cd linear_regression_model
 
 #### 2. Navigate to Flutter App
 ```bash
-cd FlutterApp/flutter_app
+cd summative/FlutterApp/flutter_app
 ```
 
 #### 3. Install Dependencies
@@ -192,25 +192,26 @@ flutter run -d [device-id]
 ### Directory Structure
 ```
 linear_regression_model/
-├── API/
-│   ├── prediction.py           # FastAPI application with ML model integration
-│   ├── requirements.txt        # Python dependencies for deployment
-│   └── render.yaml            # Render.com deployment configuration
-├── FlutterApp/flutter_app/     # Complete cross-platform mobile application
-│   ├── lib/main.dart          # Main application code with UI and API integration
-│   ├── pubspec.yaml           # Flutter dependencies and configuration
-│   ├── android/               # Android-specific configurations
-│   ├── ios/                   # iOS-specific configurations
-│   └── test/                  # Widget and unit tests
-├── linear_regression/
-│   ├── multivariate.ipynb     # Complete ML pipeline, analysis, and visualizations
-│   ├── predict_salary.py      # Standalone prediction script
-│   ├── models/                # Saved models and preprocessors
-│   │   ├── best_linear_model.pkl      # Trained Linear Regression model
-│   │   ├── scaler.pkl                 # Feature scaler for normalization
-│   │   ├── feature_names.pkl          # Feature names for consistency
-│   │   └── categorical_columns.pkl    # Categorical encoding reference
-│   └── dataset.csv           # Training dataset (300K+ records)
+├── summative/
+│   ├── linear_regression/
+│   │   ├── multivariate.ipynb     # Complete ML pipeline, analysis, and visualizations
+│   │   ├── predict_salary.py      # Standalone prediction script
+│   │   ├── models/                # Saved models and preprocessors
+│   │   │   ├── best_linear_model.pkl      # Trained Linear Regression model
+│   │   │   ├── scaler.pkl                 # Feature scaler for normalization
+│   │   │   ├── feature_names.pkl          # Feature names for consistency
+│   │   │   └── categorical_columns.pkl    # Categorical encoding reference
+│   │   └── dataset.csv           # Training dataset (300K+ records)
+│   ├── API/
+│   │   ├── prediction.py           # FastAPI application with ML model integration
+│   │   ├── requirements.txt        # Python dependencies for deployment
+│   │   └── render.yaml            # Render.com deployment configuration
+│   └── FlutterApp/flutter_app/     # Complete cross-platform mobile application
+│       ├── lib/main.dart          # Main application code with UI and API integration
+│       ├── pubspec.yaml           # Flutter dependencies and configuration
+│       ├── android/               # Android-specific configurations
+│       ├── ios/                   # iOS-specific configurations
+│       └── test/                  # Widget and unit tests
 ├── images/                   # Screenshots and visualizations
 │   ├── correlation_heatmap.png       # Feature correlation analysis
 │   ├── model_performance_comparison.png  # Model comparison results
@@ -312,7 +313,7 @@ Linear Regression was selected as the production model based on:
 3. **Run the Mobile App:**
    ```bash
    git clone https://github.com/Chol1000/linear_regression_model.git
-   cd linear_regression_model/FlutterApp/flutter_app
+   cd linear_regression_model/summative/FlutterApp/flutter_app
    flutter pub get
    flutter run
    ```
