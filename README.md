@@ -303,8 +303,8 @@ Linear Regression was selected as the production model based on:
 - **Model Persistence:** Saved models with preprocessing pipeline
 
 ### Task 2: Production API
-- **Live Endpoint:** https://international-graduates-salary-api.onrender.com/predict
-- **Swagger Documentation:** Interactive testing at `/docs` endpoint
+- **API Base URL:** https://international-graduates-salary-api.onrender.com
+- **Interactive Testing:** https://international-graduates-salary-api.onrender.com/docs
 - **Data Validation:** Pydantic constraints with proper error handling
 - **CORS Support:** Cross-origin requests enabled for mobile integration
 
