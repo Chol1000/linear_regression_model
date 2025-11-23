@@ -14,7 +14,7 @@ Providing actionable insights for informed career planning and strategic educati
 ## Key Visualizations
 
 ### 1. Correlation Heatmap - Feature Impact Analysis
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Correlation Heatmap](summative/images/correlation_heatmap.png)
 
 **Training Impact:**
 - **Education Level:** Strongest predictor (0.893 correlation) - PhD graduates earn 2.6x more than Diploma holders
@@ -25,7 +25,7 @@ Providing actionable insights for informed career planning and strategic educati
 This correlation analysis directly influenced feature selection and model training by identifying Education Level as the dominant predictor, leading to proper feature weighting in the linear regression model.
 
 ### 2. Model Performance Comparison - Training Outcome
-![Model Performance](images/model_performance_comparison.png)
+![Model Performance](summative/images/model_performance_comparison.png)
 
 **Training Results:**
 - **Best Model:** Linear Regression (Lowest MSE: 36,009,030)
@@ -144,7 +144,7 @@ flutter run -d [device-id]
 ```
 
 ### App Features & Screenshots
-![App Input Fields](images/inputs.png) ![Prediction Results](images/results.png)
+![App Input Fields](summative/images/inputs.png) ![Prediction Results](summative/images/results.png)
 
 **Core Features:**
 - **8 Input Fields:** Education Level, Field of Study, Language Proficiency, Visa Type, University Ranking, Region of Study, Age, Years Since Graduation
@@ -206,18 +206,18 @@ linear_regression_model/
 │   │   ├── prediction.py           # FastAPI application with ML model integration
 │   │   ├── requirements.txt        # Python dependencies for deployment
 │   │   └── render.yaml            # Render.com deployment configuration
-│   └── FlutterApp/flutter_app/     # Complete cross-platform mobile application
-│       ├── lib/main.dart          # Main application code with UI and API integration
-│       ├── pubspec.yaml           # Flutter dependencies and configuration
-│       ├── android/               # Android-specific configurations
-│       ├── ios/                   # iOS-specific configurations
-│       └── test/                  # Widget and unit tests
-├── images/                   # Screenshots and visualizations
-│   ├── correlation_heatmap.png       # Feature correlation analysis
-│   ├── model_performance_comparison.png  # Model comparison results
-│   ├── inputs.png                    # Mobile app input interface
-│   ├── results.png                   # Mobile app prediction results
-│   └── [other visualizations]
+│   ├── FlutterApp/flutter_app/     # Complete cross-platform mobile application
+│   │   ├── lib/main.dart          # Main application code with UI and API integration
+│   │   ├── pubspec.yaml           # Flutter dependencies and configuration
+│   │   ├── android/               # Android-specific configurations
+│   │   ├── ios/                   # iOS-specific configurations
+│   │   └── test/                  # Widget and unit tests
+│   └── images/                   # Screenshots and visualizations
+│       ├── correlation_heatmap.png       # Feature correlation analysis
+│       ├── model_performance_comparison.png  # Model comparison results
+│       ├── inputs.png                    # Mobile app input interface
+│       ├── results.png                   # Mobile app prediction results
+│       └── [other visualizations]
 └── README.md                 # This comprehensive documentation
 ```
 
